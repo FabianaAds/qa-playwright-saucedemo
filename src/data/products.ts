@@ -1,0 +1,10 @@
+export interface Product {
+  name: string;
+  price: number;
+}
+
+export const products = {
+  backpack: { name: 'Sauce Labs Backpack', price: 29.99 },
+  bikeLight: { name: 'Sauce Labs Bike Light', price: 9.99 },
+  boltTShirt: { name: 'Sauce Labs Bolt T-Shirt', price: 15.99 },
+} satisfies Record<string, Product>;
